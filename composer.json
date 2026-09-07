@@ -50,8 +50,26 @@
         "allow-plugins": {
             "phpstan/extension-installer": true,
             "php-http/discovery": true
-        }
+        },
+        "policy": {
+            "advisories": {
+                "block": true,
+                "audit": "report"
+            },
+            "abandoned": {
+                "block": true,
+                "audit": "report"
+            },
+            "malware": {
+                "block": true,
+                "block-scope": "all",
+                "audit": "fail"
+            }
+        }                        
     },
+    "archive": {
+        "exclude": ["/target", "/nbproject/private"]
+    },        
     "autoload": {
         "psr-4": {
             "Monolog\\": "src/Monolog"
