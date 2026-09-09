@@ -99,7 +99,7 @@ class PaddingProcessor implements ProcessorInterface
         return $this->__invokeIntrospection($record);
     }
 
-    private function __invokeIntrospection(LogRecord $record): LogRecord
+    private function __invokeIntrospection(LogRecord $record): LogRecord // NOSONAR: php:S100 
     {
         // return if the level is not high enough
         if ($record->level->isLowerThan($this->level)) {

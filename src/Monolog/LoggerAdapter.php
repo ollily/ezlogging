@@ -22,7 +22,7 @@ use Psr\Log\AbstractLogger;
 /**
  * @phpstan-import-type LoggingLevel from AbstractEasyGoingLogger
  */
-class LoggerAdapter extends AbstractLogger implements ResettableInterface
+class LoggerAdapter extends AbstractLogger implements ResettableInterface  // NOSONAR: php:S1448 
 {
     /** The real monolog logger */
     private Logger $monologLogger;
