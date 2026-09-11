@@ -27,14 +27,15 @@ class ConsoleHandler extends StreamHandler
     /** Standard output stream */
     public const string HANDLER_STDOUT = "php://stdout";
 
-    /** Default output level (INFO) */
+    /** Default output level */
     public const Level LEVEL_DEFAULT =  Level::Info;
 
     /**
      * ConsoleHandler constructor.
      *
-     * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level The minimum logging level at which this handler will be triggered (Default: {@link ConsoleHandler::LEVEL_DEFAULT})
-     *
+ * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level The minimum logging level at which this handler will be triggered
+     *                                                              (Default: {@link self::LEVEL_DEFAULT})
+         *
      * @phpstan-param LoggingLevel $level
      *
      * @see ConsoleHandler::LEVEL_DEFAULT;

@@ -18,12 +18,21 @@ use DateTimeZone;
 use Monolog\Handler\HandlerInterface;
 use Monolog\Processor\ProcessorInterface;
 use Psr\Log\AbstractLogger;
+use Psr\Log\LogLevel;
 
 /**
+ * @author ollily
+ *
  * @phpstan-import-type LoggingLevel from AbstractEasyGoingLogger
  */
-class LoggerAdapter extends AbstractLogger implements ResettableInterface  // NOSONAR: php:S1448 
+class LoggerAdapter extends AbstractLogger implements ResettableInterface  // NOSONAR: php:S1448
 {
+    /** Fallback timezone */
+    public const string STANDARD_TIMEZONE = "Europe/Berlin";
+
+    /** Default output level */
+    public const string LEVEL_DEFAULT = LogLevel::INFO;
+
     /** The real monolog logger */
     private Logger $monologLogger;
 
