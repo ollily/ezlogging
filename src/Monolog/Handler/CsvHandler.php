@@ -67,9 +67,9 @@ class CsvHandler extends FileHandler
      * @param null|string                                    $fileName      The name of the output file
      * @param string                                         $itemSeparator The separator char for each column (Default: {@link CsvHandler::STANDARD_ITEM_SEP})
      * @param string                                         $itemEnclosure The char enclosing each column value (Default:{@link CsvHandler::STANDARD_TEXT_SEP})
- * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level The minimum logging level at which this handler will be triggered
-     *                                                              (Default: {@link self::LEVEL_DEFAULT})
-         *
+     * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level         The minimum logging level at which this handler will be triggered
+     *                                                                      (Default: {@link self::LEVEL_DEFAULT})
+     *
      * @phpstan-param LoggingLevel $level
      *
      * @see CsvHandler::STANDARD_ITEM_SEP

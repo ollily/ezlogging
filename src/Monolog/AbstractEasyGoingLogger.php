@@ -84,7 +84,7 @@ abstract class AbstractEasyGoingLogger extends LoggerAdapter
     /**
      * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level The minimum logging level at which this handler will be triggered
      *                                                              (Default: {@link AbstractEasyGoingLogger::LEVEL_DEFAULT})
-         *
+     *
      * @see AbstractEasyGoingLogger::LEVEL_DEFAULT
      *
      * @phpstan-param LoggingLevel $level

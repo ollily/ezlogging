@@ -33,9 +33,9 @@ class ConsoleHandler extends StreamHandler
     /**
      * ConsoleHandler constructor.
      *
- * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level The minimum logging level at which this handler will be triggered
+     * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level The minimum logging level at which this handler will be triggered
      *                                                              (Default: {@link self::LEVEL_DEFAULT})
-         *
+     *
      * @phpstan-param LoggingLevel $level
      *
      * @see ConsoleHandler::LEVEL_DEFAULT;

@@ -61,9 +61,9 @@ class PaddingProcessor implements ProcessorInterface
     private int $skipStackFramesCount;
 
     /**
- * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level The minimum logging level at which this handler will be triggered
-     *                                                              (Default: {@link Level::Debug})
-         * @param string[]                                       $skipClassesPartials
+     * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level                The minimum logging level at which this handler will be triggered
+     *                                                                             (Default: {@link Level::Debug})
+     * @param string[]                                       $skipClassesPartials
      * @param int                                            $skipStackFramesCount
      *
      * @phpstan-param LoggingLevel $level

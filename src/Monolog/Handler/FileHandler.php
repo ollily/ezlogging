@@ -74,9 +74,9 @@ class FileHandler extends StreamHandler
      *
      * @param null|string                                    $pathToFile The full path to the output folder
      * @param null|string                                    $fileName   The name of the output file
- * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level The minimum logging level at which this handler will be triggered
-     *                                                              (Default: {@link self::LEVEL_DEFAULT})
-         *
+     * @param int|\Monolog\Level|\Psr\Log\LogLevel::*|string $level      The minimum logging level at which this handler will be triggered
+     *                                                                   (Default: {@link self::LEVEL_DEFAULT})
+     *
      * @phpstan-param LoggingLevel $level
      *
      * @see FileHandler::LEVEL_DEFAULT
